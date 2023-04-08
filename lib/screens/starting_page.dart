@@ -6,110 +6,81 @@ import 'package:alpha/constants.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import '../components/containers.dart';
 
-class startingpage extends StatelessWidget {
+class startingpage extends StatefulWidget {
   startingpage({Key? key}) : super(key: key);
 
   @override
+  State<startingpage> createState() => _startingpageState();
+}
+
+class _startingpageState extends State<startingpage> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kscaffoldcolor,
       appBar: AppBar(
         title: Text('title'),
         backgroundColor: kstartingpagecolor,
-        leading:IconButton(onPressed:(){  if (ZoomDrawer.of(context)!.isOpen()){
-      ZoomDrawer.of(context)!.close();
-     } else{
-         ZoomDrawer.of(context)!.open();
-         }
-         },
-          icon: Icon(Icons.import_contacts_sharp),),),
+      ),
       drawer: drawer1(),
       body: SingleChildScrollView(
         child: Container(
-          decoration: kconatiner1theme,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                height: 100,
+                height: 60,
                 decoration: BoxDecoration(color: Colors.white),
-                child: Center(
-                  child: Text(
-                    'Recommended:-',
-                    style: kRecommendTextStyle,
-                  ),
+                child: Text(
+                  'Recommended:-',
+                  style: kRecommendTextStyle,
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
               Card(
-                  clipBehavior: Clip.antiAlias,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(24),
-                  ),
-                  child: Column(
-                    children: [
-                      InkWell(
-                        splashColor: Colors.blueGrey,
-                        onTap: () {
-                          print('2');
-                        },
-                        child: Stack(
-                          children: [
-                            Image(
-                              image: AssetImage('images/1page.jpg'),
-                              height: 240,
-                              width: double.maxFinite,
-                              fit: BoxFit.cover,
-                            ),
-                            Positioned(
-                              bottom: 16,
-                              right: 16,
-                              left: 16,
-                              child: Text(
-                                'city',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontSize: 24,
-                                ),
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  children: [
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'lucknow');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/lucknowcard.jpg'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'Lucknow',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
                               ),
                             ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  )),
-              Card(
-                clipBehavior: Clip.antiAlias,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(24),
-                ),
-                child: Column(
-                  children: [
-                    Stack(
-                      children: [
-                        Image(
-                          image: AssetImage('images/1page.jpg'),
-                          height: 240,
-                          width: double.maxFinite,
-                          fit: BoxFit.cover,
-                        ),
-                        Positioned(
-                          bottom: 16,
-                          right: 16,
-                          left: 16,
-                          child: Text(
-                            'city',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              fontSize: 24,
-                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
               Card(
                 clipBehavior: Clip.antiAlias,
@@ -118,31 +89,40 @@ class startingpage extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    Stack(
-                      children: [
-                        Image(
-                          image: AssetImage('images/1page.jpg'),
-                          height: 240,
-                          width: double.maxFinite,
-                          fit: BoxFit.cover,
-                        ),
-                        Positioned(
-                          bottom: 16,
-                          right: 16,
-                          left: 16,
-                          child: Text(
-                            'city',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                              fontSize: 24,
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'newdelhi');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/newdelhicard.jpg'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'New Delhi',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
             ],
           ),

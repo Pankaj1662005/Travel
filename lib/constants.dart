@@ -7,8 +7,14 @@ const kcontainerColor = Color(0xFF1D1E33);
 
 const kRecommendTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
-  fontSize: 25,
+  fontSize: 20,
   color: kcontainerColor,
+);
+
+const kImageText = TextStyle(
+  color: Colors.white,
+  fontSize: 50,
+  fontWeight: FontWeight.w500,
 );
 
 const kconatiner1theme = BoxDecoration(

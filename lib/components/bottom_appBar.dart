@@ -17,7 +17,7 @@ class bottomappBar extends StatelessWidget {
           icon: Icons.home,
           text: 'Home',
           onPressed: () {
-            Navigator.pushNamed(context,'lucknow');
+            Navigator.pushNamed(context, 'lucknow');
           },
         ),
         GButton(
@@ -28,12 +28,16 @@ class bottomappBar extends StatelessWidget {
         GButton(
           icon: Icons.person,
           text: 'Profile',
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, 'lucknow');
+          },
         ),
         GButton(
           icon: Icons.hotel,
           text: 'Hotels',
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, 'info');
+          },
         )
       ],
     );
