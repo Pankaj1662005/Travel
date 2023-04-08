@@ -1,12 +1,11 @@
+import 'package:alpha/screens/starting_page.dart';
+
 import 'screens/splash_screen.dart';
 import 'package:alpha/screens/frontpage.dart';
 import 'package:flutter/material.dart';
 
-
-
 void main() {
-  runApp(const MyApp()
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,17 +17,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       debugShowCheckedModeBanner: false,
-      initialRoute:'splashScreen',
-      routes:{
-
-        'frontpage':(context)=> IntroPage(),
-        'splashScreen' :(context) => splashScreen(),
+      initialRoute: 'startingpage',
+      routes: {
+        'frontpage': (context) => IntroPage(),
+        'splashScreen': (context) => splashScreen(),
+        'startingpage': (context) => startingpage(),
       },
-
-
     );
   }
 }
-
