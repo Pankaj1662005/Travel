@@ -1,3 +1,5 @@
+import 'package:alpha/screens/info.dart';
+
 import 'screens/splash_screen.dart';
 import 'package:alpha/screens/frontpage.dart';
 import 'package:flutter/material.dart';
@@ -20,11 +22,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       debugShowCheckedModeBanner: false,
-      initialRoute:'splashScreen',
+      initialRoute:'info',
       routes:{
 
         'frontpage':(context)=> IntroPage(),
         'splashScreen' :(context) => splashScreen(),
+        'info':(context)=>homepage(),
+
       },
 
 
