@@ -16,7 +16,9 @@ class bottomappBar extends StatelessWidget {
         GButton(
           icon: Icons.home,
           text: 'Home',
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context,'lucknow');
+          },
         ),
         GButton(
           icon: Icons.search,
