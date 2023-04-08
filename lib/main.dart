@@ -1,6 +1,7 @@
 import 'package:alpha/screens/delhi.dart';
 import 'package:alpha/screens/info.dart';
 import 'package:alpha/screens/lucknow.dart';
+import 'package:alpha/screens/search%20page.dart';
 import 'package:alpha/screens/starting_page.dart';
 import 'screens/splash_screen.dart';
 import 'package:alpha/screens/frontpage.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'splashScreen',
+      initialRoute: 'search page',
       routes: {
         'startingpage': (context) => startingpage(),
         'frontpage': (context) => IntroPage(),
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         'info': (context) => homepage(),
         'lucknow': (context) => lucknow(),
         'newdelhi': (context) => newdelhi(),
+        'search page': (context) => SearchBarScreen(),
       },
     );
   }
