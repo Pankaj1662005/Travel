@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:like_button/like_button.dart';
 
 class lucknow extends StatefulWidget {
   const lucknow({Key? key}) : super(key: key);
@@ -9,6 +10,7 @@ class lucknow extends StatefulWidget {
 
 class _lucknowState extends State<lucknow> {
   bool selected = false;
+  int Like1=0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -82,7 +84,9 @@ class _lucknowState extends State<lucknow> {
                           children: [
                             IconButton(
                                 icon: Icon(Icons.add_business_outlined),
-                                onPressed: () {},
+                                onPressed: () {
+
+                                },
                                 iconSize: 30,
                                 color: Colors.black),
                             AnimatedAlign(
@@ -104,7 +108,9 @@ class _lucknowState extends State<lucknow> {
                               padding: const EdgeInsets.only(left: 200.0),
                               child: IconButton(
                                   icon: Icon(Icons.arrow_forward_sharp),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.pushNamed(context,'hotels');
+                                  },
                                   iconSize: 30,
                                   color: Colors.black),
                             ),
@@ -224,7 +230,7 @@ class _lucknowState extends State<lucknow> {
                             )),
                       )),
                   Container(
-                      height: 400,
+                      height: 500,
                       child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: <Widget>[
@@ -255,21 +261,75 @@ class _lucknowState extends State<lucknow> {
                                       ),
                                     ),
                                   ),
-                                  Text(
-                                    'Chotta Imambara',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.w900,
-                                    ),
-                                  ),
-                                  Text(
-                                    'A one stop for tourists',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w900,
-                                    ),
+                                  Row(
+                                    children:[
+
+                                      LikeButton(
+                                        size:40,
+                                        animationDuration: Duration(milliseconds:2000),
+                                        likeCount:Like1,
+                                        countPostion: CountPostion.bottom,
+                                      ),
+                                      SizedBox(
+                                        width:10,
+                                      ),
+                                      Container(
+                                        child:
+                                        Column(
+                                          children:[
+                                            Text(
+                                              'Chhota Imambara',
+                                              style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 30,
+                                                fontWeight: FontWeight.w900,
+                                              ),
+                                            ),
+                                            Text(
+                                              'A one stop for tourists',
+                                              style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.w900,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width:10,
+                                      ),
+
+
+
+                                      LikeButton(
+                                          size:80,
+                                          animationDuration: Duration(milliseconds:2000),
+                                          // likeCount:1,
+                                          countPostion:CountPostion.bottom,
+                                          likeBuilder: (isTapped) {
+                                            //  return Icon(
+                                            //    Icons.bookmark,
+                                            // //   Icons.monetization_on,
+                                            //    color: isTapped ? Colors.deepPurple : Colors.grey,
+                                            //    size:80,
+                                            //  );
+                                            child:
+                                            return IconButton(
+                                              icon:Icon(Icons.comment),
+                                              onPressed:(){
+                                                Navigator.pushNamed(context,'com');
+                                              },
+                                              iconSize:40,
+                                              color:Colors.brown,
+                                            );
+                                          }
+
+
+                                      ),
+
+
+                                    ],
                                   ),
                                 ])),
                             Container(
@@ -299,21 +359,75 @@ class _lucknowState extends State<lucknow> {
                                       ),
                                     ),
                                   ),
-                                  Text(
-                                    'Chotta Imambara',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.w900,
-                                    ),
-                                  ),
-                                  Text(
-                                    'A one stop for tourists',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w900,
-                                    ),
+                                  Row(
+                                    children:[
+
+                                      LikeButton(
+                                        size:40,
+                                        animationDuration: Duration(milliseconds:2000),
+                                        likeCount:Like1,
+                                        countPostion: CountPostion.bottom,
+                                      ),
+                                      SizedBox(
+                                        width:10,
+                                      ),
+                                      Container(
+                                        child:
+                                        Column(
+                                          children:[
+                                            Text(
+                                              'Amrapali',
+                                              style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 30,
+                                                fontWeight: FontWeight.w900,
+                                              ),
+                                            ),
+                                            Text(
+                                              'Dream destination for kids',
+                                              style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.w900,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width:10,
+                                      ),
+
+
+
+                                      LikeButton(
+                                          size:80,
+                                          animationDuration: Duration(milliseconds:2000),
+                                          // likeCount:1,
+                                          countPostion:CountPostion.bottom,
+                                          likeBuilder: (isTapped) {
+                                            //  return Icon(
+                                            //    Icons.bookmark,
+                                            // //   Icons.monetization_on,
+                                            //    color: isTapped ? Colors.deepPurple : Colors.grey,
+                                            //    size:80,
+                                            //  );
+                                            child:
+                                            return IconButton(
+                                              icon:Icon(Icons.comment),
+                                              onPressed:(){
+                                                Navigator.pushNamed(context,'com');
+                                              },
+                                              iconSize:40,
+                                              color:Colors.brown,
+                                            );
+                                          }
+
+
+                                      ),
+
+
+                                    ],
                                   ),
                                 ])),
                             Container(
@@ -344,28 +458,84 @@ class _lucknowState extends State<lucknow> {
                                       ),
                                     ),
                                   ),
-                                  Text(
-                                    'Tunday Kebabis',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.w900,
-                                    ),
-                                  ),
-                                  Text(
-                                    'Selling kebabs since 1923',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w900,
-                                    ),
+                                  Row(
+                                    children:[
+
+                                      LikeButton(
+                                        size:40,
+                                        animationDuration: Duration(milliseconds:2000),
+                                        likeCount:Like1,
+                                        countPostion: CountPostion.bottom,
+                                      ),
+                                      SizedBox(
+                                        width:10,
+                                      ),
+                                      Container(
+                                        child:
+                                        Column(
+                                          children:[
+                                            Text(
+                                              'Tunday Kababis',
+                                              style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 30,
+                                                fontWeight: FontWeight.w900,
+                                              ),
+                                            ),
+                                            Text(
+                                              'Selling kebabs since 1943',
+                                              style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.w900,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width:10,
+                                      ),
+
+
+
+                                      LikeButton(
+                                          size:80,
+                                          animationDuration: Duration(milliseconds:2000),
+                                          // likeCount:1,
+                                          countPostion:CountPostion.bottom,
+                                          likeBuilder: (isTapped) {
+                                            //  return Icon(
+                                            //    Icons.bookmark,
+                                            // //   Icons.monetization_on,
+                                            //    color: isTapped ? Colors.deepPurple : Colors.grey,
+                                            //    size:80,
+                                            //  );
+                                            child:
+                                            return IconButton(
+                                              icon:Icon(Icons.comment),
+                                              onPressed:(){
+                                                Navigator.pushNamed(context,'com');
+                                              },
+                                              iconSize:40,
+                                              color:Colors.brown,
+                                            );
+                                          }
+
+
+                                      ),
+
+
+                                    ],
                                   ),
                                 ],
                               ),
                             ),
                             Container(
+                              height:400,
                               color: Colors.white,
                               child: Column(
+
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.all(10.0),
@@ -390,22 +560,79 @@ class _lucknowState extends State<lucknow> {
                                       ),
                                     ),
                                   ),
-                                  Text(
-                                    'Taj Hotel',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.w900,
-                                    ),
+                                  Row(
+                                      children:[
+
+                                        LikeButton(
+                                          size:40,
+                                          animationDuration: Duration(milliseconds:2000),
+                                          likeCount:Like1,
+                                          countPostion: CountPostion.bottom,
+                                        ),
+                                        SizedBox(
+                                          width:10,
+                                        ),
+                                        Container(
+                                          child:
+                                              Column(
+                                                children:[
+                                        Text(
+                                          'Taj Hotel',
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 30,
+                                            fontWeight: FontWeight.w900,
+                                          ),
+                                        ),
+                                          Text(
+                                            'Best hotel Chains...',
+                                            style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w900,
+                                            ),
+                                          ),
+                                          ],
+                                        ),
+                                        ),
+                                        SizedBox(
+                                          width:10,
+                                        ),
+
+
+
+                                        LikeButton(
+                                            size:80,
+                                            animationDuration: Duration(milliseconds:2000),
+                                            // likeCount:1,
+                                            countPostion:CountPostion.bottom,
+                                            likeBuilder: (isTapped) {
+                                              //  return Icon(
+                                              //    Icons.bookmark,
+                                              // //   Icons.monetization_on,
+                                              //    color: isTapped ? Colors.deepPurple : Colors.grey,
+                                              //    size:80,
+                                              //  );
+                                              child:
+                                              return IconButton(
+                                                icon:Icon(Icons.comment),
+                                                onPressed:(){
+                                                  Navigator.pushNamed(context,'com');
+                                                },
+                                                iconSize:40,
+                                                color:Colors.brown,
+                                              );
+                                            }
+
+
+                                        ),
+
+
+                                      ],
                                   ),
-                                  Text(
-                                    'Best hotel Chains...',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w900,
-                                    ),
-                                  ),
+
+
+
                                 ],
                               ),
                             ),
