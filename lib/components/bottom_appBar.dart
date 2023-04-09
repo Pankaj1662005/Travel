@@ -23,7 +23,7 @@ class _bottomappBarState extends State<bottomappBar> {
           icon: Icons.home,
           text: 'Home',
           onPressed: () {
-            Navigator.pushNamed(context, 'lucknow');
+            Navigator.pushNamed(context, 'startingpage');
           },
         ),
         GButton(
