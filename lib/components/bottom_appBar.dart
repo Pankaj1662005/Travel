@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
-class bottomappBar extends StatelessWidget {
+class bottomappBar extends StatefulWidget {
   const bottomappBar({Key? key}) : super(key: key);
 
+  @override
+  State<bottomappBar> createState() => _bottomappBarState();
+}
+
+class _bottomappBarState extends State<bottomappBar> {
+  int _index = 0;
   @override
   Widget build(BuildContext context) {
     return GNav(
@@ -23,7 +29,9 @@ class bottomappBar extends StatelessWidget {
         GButton(
           icon: Icons.search,
           text: 'search',
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, 'search page');
+          },
         ),
         GButton(
           icon: Icons.person,
@@ -38,8 +46,14 @@ class bottomappBar extends StatelessWidget {
           onPressed: () {
             Navigator.pushNamed(context, 'info');
           },
-        )
+        ),
       ],
+      selectedIndex: _index,
+      onTabChange: (index) {
+        setState(() {
+          _index = index;
+        });
+      },
     );
   }
 }

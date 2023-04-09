@@ -1,4 +1,5 @@
 import 'package:alpha/constants.dart';
+import 'package:alpha/screens/city_info.dart';
 import 'package:flutter/material.dart';
 
 class newdelhi extends StatefulWidget {
@@ -21,49 +22,10 @@ class _newdelhiState extends State<newdelhi> {
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                  Padding(
-                    padding: const EdgeInsets.all(5),
-                    child: Container(
-                      width: 450,
-                      height: 450,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(35),
-                        border: Border.all(
-                          color: Colors.grey,
-                          width: 1,
-                        ),
-                        // shape: BoxShape.circle,
-                        image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: AssetImage('images/newdelhicard.jpg'),
-                        ),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(left: 2.0, top: 300.0),
-                            child: Text(
-                              'New Delhi',
-                              style: kImageText,
-                            ),
-                          ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(left: 2.0, top: 10.0),
-                            child: Text(
-                              'The capital city of India',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 25,
-                                fontWeight: FontWeight.w900,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+                  box2(
+                    imagelocation: 'images/newdelhicard.jpg',
+                    imageText: 'New Delhi',
+                    imageDescription: 'The capital city of India',
                   ),
                   GestureDetector(
                     onTap: () {
@@ -118,42 +80,10 @@ class _newdelhiState extends State<newdelhi> {
                         selected = !selected;
                       });
                     },
-                    child: Container(
-                        width: double.infinity,
-                        height: 50.0,
-                        color: kcontainerColor,
-                        child: Row(
-                          children: [
-                            IconButton(
-                                icon: Icon(Icons.remove_red_eye),
-                                onPressed: () {},
-                                iconSize: 30,
-                                color: Colors.white70),
-                            AnimatedAlign(
-                              alignment: selected
-                                  ? Alignment.centerRight
-                                  : Alignment.centerLeft,
-                              duration: const Duration(seconds: 2),
-                              curve: Curves.slowMiddle,
-                              child: Text(
-                                'Sights',
-                                style: TextStyle(
-                                  color: Colors.white70,
-                                  fontFamily: 'Pacifico',
-                                  fontSize: 20.0,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 210.0),
-                              child: IconButton(
-                                  icon: Icon(Icons.arrow_forward_sharp),
-                                  onPressed: () {},
-                                  iconSize: 30,
-                                  color: Colors.white70),
-                            ),
-                          ],
-                        )),
+                    child: box(
+                        icon1: Icons.add_home_work_outlined,
+                        icon2: Icons.arrow_forward_outlined,
+                        name: 'Home'),
                   ),
                   Divider(
                     height: 1,
@@ -165,43 +95,10 @@ class _newdelhiState extends State<newdelhi> {
                         selected = !selected;
                       });
                     },
-                    child: Container(
-                        color: kcontainerColor,
-                        width: double.infinity,
-                        height: 50.0,
-                        child: Row(
-                          children: [
-                            IconButton(
-                              icon: Icon(Icons.camera_alt),
-                              onPressed: () {},
-                              iconSize: 30,
-                              color: Colors.white70,
-                            ),
-                            AnimatedAlign(
-                              alignment: selected
-                                  ? Alignment.centerRight
-                                  : Alignment.centerLeft,
-                              duration: const Duration(seconds: 2),
-                              curve: Curves.slowMiddle,
-                              child: Text(
-                                'Things To Do',
-                                style: TextStyle(
-                                  color: Colors.white70,
-                                  fontFamily: 'Pacifico',
-                                  fontSize: 20.0,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 150.0),
-                              child: IconButton(
-                                  icon: Icon(Icons.arrow_forward_sharp),
-                                  onPressed: () {},
-                                  iconSize: 30,
-                                  color: Colors.white70),
-                            ),
-                          ],
-                        )),
+                    child: box(
+                        icon1: Icons.remove_red_eye,
+                        icon2: Icons.arrow_forward_outlined,
+                        name: 'Sights'),
                   ),
                   Divider(
                     height: 1,
@@ -215,209 +112,48 @@ class _newdelhiState extends State<newdelhi> {
                         padding: const EdgeInsets.all(20.0),
                         child: Text('Top Plans',
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w800,
                               fontFamily: 'Pacifico',
-                              color: Colors.black,
+                              color: Colors.grey.shade800,
                               fontSize: 40.0,
                             )),
                       )),
                   Container(
                       height: 400,
-                      child:
-                          ListView(scrollDirection: Axis.horizontal, children: <
-                              Widget>[
-                        Container(
-                          color: Colors.white,
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(10.0),
-                                child: Container(
-                                  width: 350,
-                                  height: 300,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: AssetImage('images/newdelhi1.jpg'),
-                                    ),
-                                  ),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(25),
-                                    child: Image.asset(
-                                      'images/newdelhi2.jpg',
-                                      width: 50,
-                                      height: 50,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Text(
-                                'Red Fort',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                              Text(
-                                'A one stop for tourists',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                            color: Colors.white,
-                            child: Column(children: [
-                              Padding(
-                                padding: const EdgeInsets.all(10.0),
-                                child: Container(
-                                  width: 350,
-                                  height: 300,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: AssetImage('images/newdelhi3.jpg'),
-                                    ),
-                                  ),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(25),
-                                    child: Image.asset(
-                                      'images/newdelhi3.jpg',
-                                      width: 50,
-                                      height: 50,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Text(
-                                'Chotta Imambara',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                              Text(
-                                'A one stop for tourists',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                            ])),
-                        Container(
-                          color: Colors.white,
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(10.0),
-                                child: Container(
-                                  width: 350,
-                                  height: 300,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: AssetImage('images/tunday.jpeg'),
-                                    ),
-                                  ),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(25),
-                                    child: Image.asset(
-                                      'images/tunday.jpeg',
-                                      width: 50,
-                                      height: 50,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Text(
-                                'Tunday Kebabis',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                              Text(
-                                'Selling kebabs since 1923',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          color: Colors.white,
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(10.0),
-                                child: Container(
-                                  width: 350,
-                                  height: 300,
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: AssetImage('images/taj.webp'),
-                                    ),
-                                  ),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(25),
-                                    child: Image.asset(
-                                      'images/taj.webp',
-                                      width: 50,
-                                      height: 50,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Text(
-                                'Taj Hotel',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                              Text(
-                                'Best hotel Chains...',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(50),
-                              color: Colors.white,
+                      child: ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: <Widget>[
+                            imagebox1(
+                              imageLocation: 'images/newdelhi2.jpg',
+                              imageName: 'Red Fort',
+                              imageDescription: 'A one stop for tourists',
                             ),
-                            height: 200.0,
-                          ),
-                        ),
-                      ])),
+                            imagebox1(
+                              imageLocation: 'images/newdelhi2.jpg',
+                              imageName: 'Red Fort',
+                              imageDescription: 'A one stop for tourists',
+                            ),
+                            imagebox1(
+                              imageLocation: 'images/newdelhi2.jpg',
+                              imageName: 'Red Fort',
+                              imageDescription: 'A one stop for tourists',
+                            ),
+                            imagebox1(
+                              imageLocation: 'images/newdelhi2.jpg',
+                              imageName: 'Red Fort',
+                              imageDescription: 'A one stop for tourists',
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.white,
+                                ),
+                                height: 200.0,
+                              ),
+                            ),
+                          ])),
                 ])))));
   }
 }

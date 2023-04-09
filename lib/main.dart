@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'search page',
+      initialRoute: 'splashScreen',
       routes: {
         'startingpage': (context) => startingpage(),
         'frontpage': (context) => IntroPage(),
