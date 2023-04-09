@@ -1,5 +1,6 @@
 import 'package:alpha/components/bottom_appBar.dart';
 import 'package:alpha/components/drawers.dart';
+import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 import 'package:alpha/constants.dart';
@@ -45,7 +46,7 @@ class _startingpageState extends State<startingpage> {
 
                 // shape: BoxShape.circle,
                 image: DecorationImage(
-                  fit: BoxFit.fill,
+                  fit: BoxFit.contain,
                   image: AssetImage('images/wine.jpg'),
                 ),
               ),
@@ -54,13 +55,13 @@ class _startingpageState extends State<startingpage> {
                 children: [
                   Padding(
                     padding:
-                    const EdgeInsets.only(left: 2.0, top: 250.0),
+                    const EdgeInsets.only(left: 2.0, top: 280.0),
                     child: Text(
                       'Lets plan your next vacation!',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 45,
-                        fontWeight: FontWeight.w900,
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal,
                       ),
                     ),
                   ),
@@ -83,21 +84,28 @@ class _startingpageState extends State<startingpage> {
           ]
         ),
               ),
-              SizedBox(
-                height: 10,
-              ),
+
 
               Container(
                 child:Padding(
                   padding: const EdgeInsets.only(left:10.0),
-                  child: Text(
-                    'Trending ',
-                      style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 40,
-                              fontWeight: FontWeight.w900,
-                            ),
-                  ),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Trending ',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w100,
+                        ),
+                      ),
+                      AvatarGlow(child: Icon(Icons.arrow_forward_rounded), endRadius: 20)
+
+                    ],
+                  )
+
+
+
                 )
 
               ),

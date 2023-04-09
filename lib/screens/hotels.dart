@@ -11,9 +11,9 @@ class Hotel extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            backgroundColor:Colors.deepPurple,
+            backgroundColor:Colors.deepPurple.shade200,
             leading: Icon(Icons.arrow_back),
-            title: Text('Rating  for  H O T E L S'),
+            title: Text('Recommended  H O T E L S'),
             expandedHeight: 150,
           ),
 
