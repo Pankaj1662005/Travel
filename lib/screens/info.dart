@@ -59,43 +59,41 @@ class _homepageState extends State<homepage> {
                 'Kashmir is a region located in the northernmost part of the Indian subcontinent, primarily in the Indian state of Jammu and Kashmir. It is known for its stunning natural beauty, including picturesque valleys, snow-capped mountains, and crystal-clear lakesKashmir has been a disputed territory between India and Pakistan for decades, with ongoing tensions and conflicts in the region. However, despite the political unrest, Kashmir remains a popular tourist destination for its scenic landscapes and rich culture.',
           ),
           makePage(
-            image: 'images/kashmir.jpg',
-            title: 'Kashmir',
-            page: 5,
-            description:
-                'Kashmir is a region located in the northernmost part of the Indian subcontinent, primarily in the Indian state of Jammu and Kashmir. It is known for its stunning natural beauty, including picturesque valleys, snow-capped mountains, and crystal-clear lakesKashmir has been a disputed territory between India and Pakistan for decades, with ongoing tensions and conflicts in the region. However, despite the political unrest, Kashmir remains a popular tourist destination for its scenic landscapes and rich culture.',
-          ),
+              image: 'images/hyderabadinfo.jpg',
+              title: 'Hyderabad',
+              page: 5,
+              description: ''),
           makePage(
-            image: 'images/kashmir.jpg',
-            title: 'Kashmir',
+            image: 'images/AgraCard.webp',
+            title: 'Agra',
             page: 6,
             description:
                 'Kashmir is a region located in the northernmost part of the Indian subcontinent, primarily in the Indian state of Jammu and Kashmir. It is known for its stunning natural beauty, including picturesque valleys, snow-capped mountains, and crystal-clear lakesKashmir has been a disputed territory between India and Pakistan for decades, with ongoing tensions and conflicts in the region. However, despite the political unrest, Kashmir remains a popular tourist destination for its scenic landscapes and rich culture.',
           ),
           makePage(
             image: 'images/kashmir.jpg',
-            title: 'Kashmir',
+            title: 'Bangalore',
             page: 7,
             description:
                 'Kashmir is a region located in the northernmost part of the Indian subcontinent, primarily in the Indian state of Jammu and Kashmir. It is known for its stunning natural beauty, including picturesque valleys, snow-capped mountains, and crystal-clear lakesKashmir has been a disputed territory between India and Pakistan for decades, with ongoing tensions and conflicts in the region. However, despite the political unrest, Kashmir remains a popular tourist destination for its scenic landscapes and rich culture.',
           ),
           makePage(
             image: 'images/kashmir.jpg',
-            title: 'Kashmir',
+            title: 'Mumbai',
             page: 8,
             description:
                 'Kashmir is a region located in the northernmost part of the Indian subcontinent, primarily in the Indian state of Jammu and Kashmir. It is known for its stunning natural beauty, including picturesque valleys, snow-capped mountains, and crystal-clear lakesKashmir has been a disputed territory between India and Pakistan for decades, with ongoing tensions and conflicts in the region. However, despite the political unrest, Kashmir remains a popular tourist destination for its scenic landscapes and rich culture.',
           ),
           makePage(
             image: 'images/kashmir.jpg',
-            title: 'Kashmir',
+            title: 'Allahabad',
             page: 9,
             description:
                 'Kashmir is a region located in the northernmost part of the Indian subcontinent, primarily in the Indian state of Jammu and Kashmir. It is known for its stunning natural beauty, including picturesque valleys, snow-capped mountains, and crystal-clear lakesKashmir has been a disputed territory between India and Pakistan for decades, with ongoing tensions and conflicts in the region. However, despite the political unrest, Kashmir remains a popular tourist destination for its scenic landscapes and rich culture.',
           ),
           makePage(
             image: 'images/kashmir.jpg',
-            title: 'Kashmir',
+            title: '',
             page: 10,
             description:
                 'Kashmir is a region located in the northernmost part of the Indian subcontinent, primarily in the Indian state of Jammu and Kashmir. It is known for its stunning natural beauty, including picturesque valleys, snow-capped mountains, and crystal-clear lakesKashmir has been a disputed territory between India and Pakistan for decades, with ongoing tensions and conflicts in the region. However, despite the political unrest, Kashmir remains a popular tourist destination for its scenic landscapes and rich culture.',

@@ -31,75 +31,57 @@ class _startingpageState extends State<startingpage> {
             children: [
               Container(
                 height: 400,
-           child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-            Padding(
-            padding: const EdgeInsets.all(5),
-            child: Container(
-              width: 450,
-              height: 380,
-              decoration: BoxDecoration(
-
-
-
-                // shape: BoxShape.circle,
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: AssetImage('images/wine.jpg'),
-                ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding:
-                    const EdgeInsets.only(left: 2.0, top: 250.0),
-                    child: Text(
-                      'Lets plan your next vacation!',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 45,
-                        fontWeight: FontWeight.w900,
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(5),
+                        child: Container(
+                          width: 450,
+                          height: 380,
+                          decoration: BoxDecoration(
+                            // shape: BoxShape.circle,
+                            image: DecorationImage(
+                              fit: BoxFit.fill,
+                              image: AssetImage('images/wine.jpg'),
+                            ),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 2.0, top: 250.0),
+                                child: Text(
+                                  'Lets plan your next vacation!',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                  // Padding(
-                  //   padding:
-                  //   const EdgeInsets.only(left: 2.0, top: 10.0),
-                  //   child: Text(
-                  //     'The City Of Nawabs And Kababs',
-                  //     style: TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 25,
-                  //       fontWeight: FontWeight.w900,
-                  //     ),
-                  //   ),
-                  // ),
-                ],
-              ),
-            ),
-          ),
-          ]
-        ),
+                    ]),
               ),
               SizedBox(
                 height: 10,
               ),
-
               Container(
-                child:Padding(
-                  padding: const EdgeInsets.only(left:10.0),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 10.0),
                   child: Text(
                     'Trending ',
-                      style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 40,
-                              fontWeight: FontWeight.w900,
-                            ),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 40,
+                      fontWeight: FontWeight.w900,
+                    ),
                   ),
-                )
-
+                ),
               ),
               SizedBox(
                 height: 15,
@@ -268,6 +250,261 @@ class _startingpageState extends State<startingpage> {
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Card(
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  children: [
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'chandigarh');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/hyderabadCard.jpg'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'Hyderabad',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Card(
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  children: [
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'chandigarh');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/AgraCard.webp'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'Agra',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Card(
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  children: [
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'chandigarh');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/bangalore.jpg'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'Bangalore',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Card(
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  children: [
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'chandigarh');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/AgraCard.webp'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'Agra',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Card(
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  children: [
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'chandigarh');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/AgraCard.webp'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'Agra',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Card(
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  children: [
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'chandigarh');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/AgraCard.webp'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'Agra',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
               ),
             ],
           ),
