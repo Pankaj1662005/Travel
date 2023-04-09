@@ -23,7 +23,7 @@ class _GetStartedState extends State<GetStarted> {
       child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
         height: 40,
-        width: 130,
+        width: 150,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(40),
             gradient: LinearGradient(colors: [
@@ -49,7 +49,7 @@ class _GetStartedState extends State<GetStarted> {
               " Get Started",
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 16,
+                  fontSize: 14,
                   fontWeight: FontWeight.w600),
             )
           ],

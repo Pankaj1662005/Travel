@@ -56,23 +56,11 @@ class _startingpageState extends State<startingpage> {
                                   'Lets plan your next vacation!',
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 45,
-                                    fontWeight: FontWeight.w900,
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
-                              // Padding(
-                              //   padding:
-                              //   const EdgeInsets.only(left: 2.0, top: 10.0),
-                              //   child: Text(
-                              //     'The City Of Nawabs And Kababs',
-                              //     style: TextStyle(
-                              //       color: Colors.white,
-                              //       fontSize: 25,
-                              //       fontWeight: FontWeight.w900,
-                              //     ),
-                              //   ),
-                              // ),
                             ],
                           ),
                         ),
@@ -83,17 +71,18 @@ class _startingpageState extends State<startingpage> {
                 height: 10,
               ),
               Container(
-                  child: Padding(
-                padding: const EdgeInsets.only(left: 10.0),
-                child: Text(
-                  'Trending ',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontWeight: FontWeight.w900,
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 10.0),
+                  child: Text(
+                    'Trending ',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 40,
+                      fontWeight: FontWeight.w900,
+                    ),
                   ),
                 ),
-              )),
+              ),
               SizedBox(
                 height: 15,
               ),
