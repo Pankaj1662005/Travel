@@ -124,6 +124,87 @@ class _startingpageState extends State<startingpage> {
               SizedBox(
                 height: 20,
               ),
+              Card(
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  children: [
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'chandigarh');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/chandigarh1.jpg'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'Chandigarh',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Card(
+                clipBehavior: Clip.antiAlias,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Column(
+                  children: [
+                    InkWell(
+                      splashColor: Colors.blueGrey,
+                      onTap: () {
+                        Navigator.pushNamed(context, 'kolkata');
+                      },
+                      child: Stack(
+                        children: [
+                          Image(
+                            image: AssetImage('images/kolkata.jpg'),
+                            height: 240,
+                            width: double.maxFinite,
+                            fit: BoxFit.cover,
+                          ),
+                          Positioned(
+                            bottom: 16,
+                            right: 16,
+                            left: 16,
+                            child: Text(
+                              'Kolkata',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
