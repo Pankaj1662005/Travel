@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 int i = 0;
 int top = 1;
-List<String> myList = ['This was the best day of my life believe me',
-  'Hello guys i want to tell you that this is the best place in India',
-  'i got fascinated by this sight   '];
+List<String> myList = ['1) This was the best day of my life believe me',
+  '2) Hello guys i want to tell you that this is the best place in India',
+  '3) This is awesome place i got so much fascinated by this sight ',
+];
 class MyCom extends StatefulWidget {
   const MyCom({Key? key}) : super(key: key);
 
@@ -29,7 +30,7 @@ class _MyComState extends State<MyCom> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.teal[200],
         body:Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
@@ -61,6 +62,7 @@ class _MyComState extends State<MyCom> {
               onPressed: () {
                 setState(() {
                   userPost = _textController.text;
+
                 });
                 copy();
 
@@ -69,10 +71,10 @@ class _MyComState extends State<MyCom> {
                 //   Navigator.pushNamed(context, 'animalresult');
                 // }
               },
-              color: Colors.transparent,
+              color: Colors.blue,
               child: Text('Add',
                   style: TextStyle(
-                    color: Colors.blue,
+                    color: Colors.white,
                   )),
             ),
             SizedBox(
@@ -84,7 +86,11 @@ class _MyComState extends State<MyCom> {
                 ),
                 onPressed:(){
                   Navigator.pushNamed(context,'comishere');
-                }
+                },
+              style:ElevatedButton.styleFrom(
+                backgroundColor:Colors.blue,
+              ),
+
             )
           ],
         )

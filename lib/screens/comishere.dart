@@ -32,7 +32,7 @@ class _JeetState extends State<Jeet> {
               Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/back.jpg'),
+                    image: AssetImage('images/wall.jpg'),
                     fit: BoxFit.fill,
                   ),
                 ),
