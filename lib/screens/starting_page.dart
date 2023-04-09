@@ -19,7 +19,7 @@ class _startingpageState extends State<startingpage> {
     return Scaffold(
       backgroundColor: kscaffoldcolor,
       appBar: AppBar(
-        title: Text('title'),
+        title: Text('Locations'),
         backgroundColor: kstartingpagecolor,
       ),
       drawer: drawer1(),

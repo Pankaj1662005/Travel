@@ -73,7 +73,7 @@ class _SearchBarScreenState extends State<SearchBarScreen> {
     return Scaffold(
       backgroundColor: kscaffoldcolor,
       appBar: AppBar(
-        title: Text('title'),
+        title: Text('Locations'),
         backgroundColor: kstartingpagecolor,
       ),
       drawer: drawer1(),
