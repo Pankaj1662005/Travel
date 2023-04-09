@@ -30,15 +30,79 @@ class _startingpageState extends State<startingpage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                height: 60,
-                decoration: BoxDecoration(color: Colors.white),
-                child: Text(
-                  'Recommended:-',
-                  style: kRecommendTextStyle,
+                height: 400,
+           child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+            Padding(
+            padding: const EdgeInsets.all(5),
+            child: Container(
+              width: 450,
+              height: 380,
+              decoration: BoxDecoration(
+
+
+
+                // shape: BoxShape.circle,
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage('images/wine.jpg'),
                 ),
               ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding:
+                    const EdgeInsets.only(left: 2.0, top: 250.0),
+                    child: Text(
+                      'Lets plan your next vacation!',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 45,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                  ),
+                  // Padding(
+                  //   padding:
+                  //   const EdgeInsets.only(left: 2.0, top: 10.0),
+                  //   child: Text(
+                  //     'The City Of Nawabs And Kababs',
+                  //     style: TextStyle(
+                  //       color: Colors.white,
+                  //       fontSize: 25,
+                  //       fontWeight: FontWeight.w900,
+                  //     ),
+                  //   ),
+                  // ),
+                ],
+              ),
+            ),
+          ),
+          ]
+        ),
+              ),
               SizedBox(
-                height: 20,
+                height: 10,
+              ),
+
+              Container(
+                child:Padding(
+                  padding: const EdgeInsets.only(left:10.0),
+                  child: Text(
+                    'Trending ',
+                      style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 40,
+                              fontWeight: FontWeight.w900,
+                            ),
+                  ),
+                )
+
+              ),
+              SizedBox(
+                height: 15,
               ),
               Card(
                 clipBehavior: Clip.antiAlias,
