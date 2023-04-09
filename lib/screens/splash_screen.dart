@@ -13,9 +13,12 @@ class _splashScreenState extends State<splashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () {
-      Navigator.pushReplacementNamed(context, 'frontpage');
-    },);
+    Timer(
+      Duration(seconds: 4),
+      () {
+        Navigator.pushReplacementNamed(context, 'frontpage');
+      },
+    );
   }
 
   Widget build(BuildContext context) {
@@ -23,7 +26,8 @@ class _splashScreenState extends State<splashScreen> {
       backgroundColor: Color(0xFF393737),
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage('images/logo.png'),
+          image: DecorationImage(
+            image: AssetImage('images/logo.png'),
             fit: BoxFit.fitWidth,
           ),
         ),
