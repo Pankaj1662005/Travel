@@ -395,7 +395,7 @@ class _startingpageState extends State<startingpage> {
                       child: Stack(
                         children: [
                           Image(
-                            image: AssetImage('images/AgraCard.webp'),
+                            image: AssetImage('images/ahemda.jpeg'),
                             height: 240,
                             width: double.maxFinite,
                             fit: BoxFit.cover,
@@ -405,7 +405,7 @@ class _startingpageState extends State<startingpage> {
                             right: 16,
                             left: 16,
                             child: Text(
-                              'Agra',
+                              'Ahemdabad',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -437,7 +437,7 @@ class _startingpageState extends State<startingpage> {
                       child: Stack(
                         children: [
                           Image(
-                            image: AssetImage('images/AgraCard.webp'),
+                            image: AssetImage('images/pune.jpg'),
                             height: 240,
                             width: double.maxFinite,
                             fit: BoxFit.cover,
@@ -447,7 +447,7 @@ class _startingpageState extends State<startingpage> {
                             right: 16,
                             left: 16,
                             child: Text(
-                              'Agra',
+                              'Pune',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -479,7 +479,7 @@ class _startingpageState extends State<startingpage> {
                       child: Stack(
                         children: [
                           Image(
-                            image: AssetImage('images/AgraCard.webp'),
+                            image: AssetImage('images/Roorkee.jpg'),
                             height: 240,
                             width: double.maxFinite,
                             fit: BoxFit.cover,
@@ -489,7 +489,7 @@ class _startingpageState extends State<startingpage> {
                             right: 16,
                             left: 16,
                             child: Text(
-                              'Agra',
+                              'Roorkee',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
