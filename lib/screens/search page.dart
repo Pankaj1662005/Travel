@@ -20,11 +20,11 @@ class _SearchBarScreenState extends State<SearchBarScreen> {
     {
       "id": 2,
       "name": "NEW DELHI",
-      "des": "Co-founder & CEO @ ",
+      "des": " ",
     },
     {
       "id": 3,
-      "name": "GURUGRAM",
+      "name": "KOlKATA",
       "des": " ",
     },
     {
@@ -36,31 +36,6 @@ class _SearchBarScreenState extends State<SearchBarScreen> {
       "id": 5,
       "name": "LUCKNOW",
       "des": " ",
-    },
-    {
-      "id": 6,
-      "name": "",
-      "des": "Co-founder & CEO @ ",
-    },
-    {
-      "id": 7,
-      "name": "Kaviraj Patil",
-      "des": "Co-founder & CEO @ ",
-    },
-    {
-      "id": 8,
-      "name": "Raja Ram",
-      "des": "Co-founder & CEO @ ",
-    },
-    {
-      "id": 9,
-      "name": "Caversky",
-      "des": "Co-founder & CEO @ ",
-    },
-    {
-      "id": 10,
-      "name": "Becky",
-      "des": "Co-founder & CEO @ ",
     },
   ];
 
