@@ -1,8 +1,10 @@
 import 'package:alpha/screens/com.dart';
 import 'package:alpha/screens/comishere.dart';
+import 'package:alpha/screens/chandigarh.dart';
 import 'package:alpha/screens/delhi.dart';
 import 'package:alpha/screens/hotels.dart';
 import 'package:alpha/screens/info.dart';
+import 'package:alpha/screens/kolkata.dart';
 import 'package:alpha/screens/lucknow.dart';
 import 'package:alpha/screens/search%20page.dart';
 import 'package:alpha/screens/starting_page.dart';
@@ -38,6 +40,8 @@ class MyApp extends StatelessWidget {
         'lucknow': (context) => lucknow(),
         'newdelhi': (context) => newdelhi(),
         'search page': (context) => SearchBarScreen(),
+        'chandigarh': (context) => chandigarh(),
+        'kolkata': (context) => Kolkata(),
       },
     );
   }
