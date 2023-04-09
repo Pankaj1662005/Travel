@@ -42,7 +42,7 @@ class _startingpageState extends State<startingpage> {
                           decoration: BoxDecoration(
                             // shape: BoxShape.circle,
                             image: DecorationImage(
-                              fit: BoxFit.fill,
+                              fit: BoxFit.fitWidth,
                               image: AssetImage('images/wine.jpg'),
                             ),
                           ),
@@ -51,12 +51,12 @@ class _startingpageState extends State<startingpage> {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.only(
-                                    left: 2.0, top: 250.0),
+                                    left: 2.0, top: 280.0),
                                 child: Text(
                                   'Lets plan your next vacation!',
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 30,
+                                    fontSize: 20,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
@@ -77,8 +77,8 @@ class _startingpageState extends State<startingpage> {
                     'Trending ',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 40,
-                      fontWeight: FontWeight.w900,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w100,
                     ),
                   ),
                 ),
@@ -167,9 +167,7 @@ class _startingpageState extends State<startingpage> {
                   ],
                 ),
               ),
-              SizedBox(
-                height: 20,
-              ),
+
               Card(
                 clipBehavior: Clip.antiAlias,
                 shape: RoundedRectangleBorder(
