@@ -14,7 +14,7 @@ class Hotel extends StatelessWidget {
           SliverAppBar(
             backgroundColor: Colors.deepPurple,
             leading: Icon(Icons.arrow_back),
-            title: Text('Rating  for  H O T E L S'),
+            title: Text('Recommended  H O T E L S'),
             expandedHeight: 150,
           ),
           SliverToBoxAdapter(
