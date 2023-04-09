@@ -32,8 +32,8 @@ class MyApp extends StatelessWidget {
         'lucknow': (context) => lucknow(),
         'newdelhi': (context) => newdelhi(),
         'search page': (context) => SearchBarScreen(),
-        'chandigarh':(context)=>chandigarh(),
-        'kolkata':(context)=>Kolkata(),
+        'chandigarh': (context) => chandigarh(),
+        'kolkata': (context) => Kolkata(),
       },
     );
   }
