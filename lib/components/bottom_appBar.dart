@@ -34,13 +34,6 @@ class _bottomappBarState extends State<bottomappBar> {
           },
         ),
         GButton(
-          icon: Icons.person,
-          text: 'Profile',
-          onPressed: () {
-            Navigator.pushNamed(context, 'lucknow');
-          },
-        ),
-        GButton(
           icon: Icons.hotel,
           text: 'Hotels',
           onPressed: () {

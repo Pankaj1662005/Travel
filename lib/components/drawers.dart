@@ -15,7 +15,7 @@ class drawer1 extends StatelessWidget {
             decoration: BoxDecoration(
               color: kstartingpagecolor,
               image: DecorationImage(
-                image: AssetImage('images/logo2.jpg'),
+                image: AssetImage('images/drawerlogo.jpg'),
                 fit: BoxFit.fill,
               ),
             ),
@@ -26,21 +26,33 @@ class drawer1 extends StatelessWidget {
             color: Colors.teal,
           ),
           ListTile(
-            title: const Text('Item 1'),
+            title: const Text(
+              'Hotels',
+              style: TextStyle(
+                color: Colors.white70,
+              ),
+            ),
             splashColor: Colors.tealAccent,
-            onTap: () {},
+            tileColor: kcontainerColor,
+            onTap: () {
+              Navigator.pushNamed(context, 'hotels');
+            },
           ),
           ListTile(
-            title: const Text('Item 2'),
+            title: const Text('RATE US'),
             splashColor: Colors.tealAccent,
             tileColor: Colors.red,
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, 'com');
+            },
           ),
           ListTile(
-            title: const Text('Item 2'),
+            title: const Text('Stories'),
             splashColor: Colors.tealAccent,
             tileColor: Colors.blue,
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, 'info');
+            },
           ),
         ],
       ),

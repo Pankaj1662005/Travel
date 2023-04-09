@@ -129,17 +129,17 @@ class _newdelhiState extends State<newdelhi> {
                               imageDescription: 'A one stop for tourists',
                             ),
                             imagebox1(
-                              imageLocation: 'images/newdelhi2.jpg',
+                              imageLocation: 'images/delhi1.jpg',
                               imageName: 'Red Fort',
                               imageDescription: 'A one stop for tourists',
                             ),
                             imagebox1(
-                              imageLocation: 'images/newdelhi2.jpg',
+                              imageLocation: 'images/newdelhi1.jpg',
                               imageName: 'Red Fort',
                               imageDescription: 'A one stop for tourists',
                             ),
                             imagebox1(
-                              imageLocation: 'images/newdelhi2.jpg',
+                              imageLocation: 'images/newdelhi3.jpg',
                               imageName: 'Red Fort',
                               imageDescription: 'A one stop for tourists',
                             ),
